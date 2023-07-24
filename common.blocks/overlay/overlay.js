@@ -1,9 +1,13 @@
 "use strict"
-createOverlay();
+deleteOverlay();
 
-function createOverlay() {
-	/**Create and style Overlay*/
-	let overlay = document.createElement("div");
-	overlay.classList.add('.overlay');
-	debugger;
+function deleteOverlay() {
+	window.addEventListener("load", function() {
+
+		/**Wait additional 5s*/
+		this.setTimeout(() => {
+			document.querySelector(".overlay").style.display = "none";
+			document.querySelector(".main-wrap").style.display = "block";
+		}, 5000);
+	});
 }

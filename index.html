@@ -5,12 +5,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./main-styles/myReset.css" />
 	<link rel="stylesheet" href="./main-styles/main.css" />
-	<script src="./common.blocks/overlay/overlay.js"></script>
 	<title>Decbase</title>
 </head>
-<body class="body">
-	<div class="overlay"></div>
 
+<body class="body">
+	<div class="overlay">
+		<div class="overlay__loader"></div>
+	</div>
+	<script src="./common.blocks/overlay/overlay.js"></script>
+
+	<main class="main-wrap">
 	<header id="header" class="header">
 		<div class="logo">
 			<a class="logo__link" href="#" target="_self">
@@ -67,5 +71,6 @@
 			<!-- <img src="./common.blocks/hero/our-design/design.png" alt="Light-filled room with white chairs on beige legs, a beige closet with glass in the background and a minimalist black chandelier near the window illuminating a beige table"> -->
 		</div>
 	</section>
+	</main>
 </body>
 </html>

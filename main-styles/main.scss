@@ -2,6 +2,7 @@
 @import './mixins';
 @import './functions';
 
+@import '../common.blocks/overlay/overlay.scss';
 @import '../common.blocks/header/header.scss';
 
 .body {
@@ -10,6 +11,8 @@
   width: 100%;
   padding: 0 13.75%;
 }
+
+.main-wrap {display: none;}
 
 h1 {
   font-family: $Poppins;
@@ -47,10 +50,4 @@ h4 {
 h5 {
   @include heading-5(24px);
 }
-
-
-
-
-
-
 
