@@ -1,0 +1,10 @@
+.registration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__button {
+    @include cta(97, 31);
+    display: flex;
+  }
+}

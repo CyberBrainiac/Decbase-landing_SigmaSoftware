@@ -1,0 +1,11 @@
+.logo {
+  width: 150.757px;
+  height: 46.041px;
+  overflow: hidden;
+
+  img {
+    @include image-cover();
+    position: relative;
+    left: 1px;
+  }
+}

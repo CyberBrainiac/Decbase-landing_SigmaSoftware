@@ -1,1 +1,55 @@
-body {background-color: aqua;}
+@import './variables';
+@import './mixins';
+@import './functions';
+
+@import '../common.blocks/header/header.scss';
+
+.body {
+  color: $text-color-main;
+  background-color: $page-bg-color-main;
+  width: 100%;
+  padding: 0 13.75%;
+}
+
+h1 {
+  font-family: $Poppins;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 90px;
+  color: $heading-color-main;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: $Poppins;
+  font-weight: 500;
+  font-size: 48px;
+  color: $heading-color-main;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: $Poppins;
+  font-weight: 600;
+  font-size: 20px;
+  color: $text-color-main;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: $Open-Sans;
+  font-weight: 700;
+  font-size: 24px;
+  color: $heading-color-main;
+  text-transform: capitalize;
+}
+
+h5 {
+  @include heading-5(24px);
+}
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+@import './registration/registration.scss';
+
+.navigation {
+  width: 44vw;
+  max-width: 852px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+  
+  &__link-wrapper {
+    display: flex;
+    column-gap: 2vw;
+  }
+
+  &__link {
+    @include heading-5(16px);
+    text-transform: uppercase;
+  }
+
+  &_first-link {
+    li:first-child {
+      color: $text-color-main;
+    }
+  }
+}

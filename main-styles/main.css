@@ -1,3 +1,128 @@
-body {
-  background-color: aqua;
+/*Fonts and Typography*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600&family=Raleway:wght@500&display=swap");
+/*Colors*/
+/*Scrollbar */
+/*Buttons*/
+.logo {
+  width: 150.757px;
+  height: 46.041px;
+  overflow: hidden;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+  left: 1px;
+}
+
+.registration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.registration__button {
+  width: 97;
+  height: 31;
+  background-color: #37806B;
+  border: 5px solid #37806B;
+  color: #fff;
+  border-radius: 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navigation {
+  width: 44vw;
+  max-width: 852px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr;
+}
+.navigation__link-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 2vw;
+     -moz-column-gap: 2vw;
+          column-gap: 2vw;
+}
+.navigation__link {
+  font-family: "Open Sans", "Georgia", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 28px;
+  color: #212121;
+  text-transform: uppercase;
+}
+.navigation_first-link li:first-child {
+  color: #646464;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body {
+  color: #646464;
+  background-color: #fff;
+  width: 100%;
+  padding: 0 13.75%;
+}
+
+h1 {
+  font-family: "Poppins", "Georgia", sans-serif;
+  font-weight: 600;
+  font-size: 72px;
+  line-height: 90px;
+  color: #212121;
+  text-transform: capitalize;
+}
+
+h2 {
+  font-family: "Poppins", "Georgia", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  color: #212121;
+  text-transform: capitalize;
+}
+
+h3 {
+  font-family: "Poppins", "Georgia", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #646464;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Open Sans", "Georgia", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #212121;
+  text-transform: capitalize;
+}
+
+h5 {
+  font-family: "Open Sans", "Georgia", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  color: #212121;
 }/*# sourceMappingURL=main.css.map */
