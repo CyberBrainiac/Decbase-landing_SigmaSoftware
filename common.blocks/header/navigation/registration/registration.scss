@@ -4,7 +4,12 @@
   justify-content: center;
 
   &__button {
-    @include cta(97, 31);
-    display: flex;
+    @include cta(107px, 41px);
+    background-color: $page-decore-color-main;
+    font-weight: 600;
+    border: 5px solid $page-decore-color-main;
+    padding: 4.9px 18.97px;
+    text-transform: capitalize;
   }
 }
+

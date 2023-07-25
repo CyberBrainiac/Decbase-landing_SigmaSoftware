@@ -1,0 +1,12 @@
+.content {
+  display: flex;
+
+  &__card {
+    max-width: 400px;
+    width: 20.9vw;
+  }
+
+  &__image {
+    @extend .content__card;
+  }
+}

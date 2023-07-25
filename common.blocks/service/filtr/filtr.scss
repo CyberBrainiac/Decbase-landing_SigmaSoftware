@@ -1,0 +1,14 @@
+.filtr {
+  display: flex;
+  margin-top: 20px;
+
+  [type="button"] {
+    @include button(207px, 46px);
+    border-radius: 20px;
+    margin-right: 5vh;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

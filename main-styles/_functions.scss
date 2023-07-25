@@ -1,6 +1,5 @@
-
-// @function bodyWidthInPercent() {
-//   $viewPortWidth: 100vh;
-//   $result: calc(100vw - $scrollbar-width);
-//   @return $result;
-// }
+@function goLevelHigher($folderURL) {
+  $folderUp: "..";
+  $fullPath: $folderUp + $folderURL;
+  @return $fullPath;
+}

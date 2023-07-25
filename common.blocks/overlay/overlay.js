@@ -8,6 +8,10 @@ function deleteOverlay() {
 		this.setTimeout(() => {
 			document.querySelector(".overlay").style.display = "none";
 			document.querySelector(".main-wrap").style.display = "block";
-		}, 5000);
+		}, 5);
 	});
 }
+
+/**
+ * ДОДАТИ поступовий перехід від оверлєя до сторінки через OPACITY, коли анімація завершиться, Display:none
+ */

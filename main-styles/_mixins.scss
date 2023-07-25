@@ -4,6 +4,12 @@
   object-fit: cover;
 }
 
+@mixin background-image($url) {
+  background-image: url( goLevelHigher($url));
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
 @mixin heading-5($font-size) {
   font-family: $Open-Sans;
   font-weight: 600;
@@ -16,12 +22,24 @@
 @mixin button($width, $height) {
   width: $width;
   height: $height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: $buttons-color-main;
   border: 5px solid $buttons-color-main;
   color: $page-bg-color-main;
+  font-family: $Open-Sans;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 @mixin cta($width, $height) {
   @include button($width, $height);
   border-radius: 20px 0px;
 }
+
+
+
+

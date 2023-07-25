@@ -1,0 +1,9 @@
+@import './who-we-are/who-we-are.scss';
+@import './our-design/our-design.scss';
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  padding: 35px 0;
+}

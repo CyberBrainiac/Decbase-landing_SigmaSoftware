@@ -10,6 +10,7 @@
   &__link-wrapper {
     display: flex;
     column-gap: 2vw;
+    align-items: center;
   }
 
   &__link {
@@ -23,3 +24,5 @@
     }
   }
 }
+
+
