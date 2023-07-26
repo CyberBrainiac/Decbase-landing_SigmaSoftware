@@ -16,8 +16,6 @@ async function categoryFiltr(categoryID) {
   const product = await getProductById(allCategories[categoryID]);
   if(!product) {return}
 
-  console.log(product);
-
   for (const imgUrl of product.images) {
     product.currentImageSrc = imgUrl;
     const productCard= createCard(product);

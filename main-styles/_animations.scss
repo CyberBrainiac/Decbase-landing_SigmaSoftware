@@ -1,0 +1,50 @@
+@keyframes disappearance{
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes loader-1-item{
+	25% {
+			transform:  translate(0, -100px);
+	}
+	75% {
+			transform:  translate(0, 100px);
+	}
+}
+
+@keyframes loader-2-item{
+	25% {
+		transform:  translate(0, -150px);
+	}
+	75% {
+		transform:  translate(0, 150px);
+	}
+}
+
+@keyframes loader-3-item{
+	25% {
+		transform:  translate(0, -200px);
+	}
+	75% {
+		transform:  translate(0, 200px);
+	}
+}
+
+@keyframes loader-4-item{
+	25% {
+		transform:  translate(0, -150px);
+	}
+	75% {
+		transform:  translate(0, 150px);
+	}
+}
+
+@keyframes loader-5-item{
+	25% {
+		transform:  translate(0, -100px);
+	}
+	75% {
+		transform:  translate(0, 100px);
+	}
+}
