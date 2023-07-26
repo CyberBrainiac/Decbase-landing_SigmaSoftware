@@ -37,7 +37,12 @@
 
 @mixin cta($width, $height) {
   @include button($width, $height);
-  border-radius: 20px 0px;
+  border-radius: $cta-bord-rad;
+}
+
+@mixin buttonActive() {
+  background-color: $page-bg-color-main;
+  color: $buttons-color-main;
 }
 
 

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600&family=Raleway:wght@500&display=swap");
 /*Colors*/
 /*Scrollbar */
+/*Border radius*/
 /*Buttons*/
 .overlay {
   position: fixed;
@@ -102,6 +103,7 @@
   border: 5px solid #CAA892;
   padding: 4.9px 18.97px;
   text-transform: capitalize;
+  border-radius: 15px 0px;
 }
 
 .navigation {
@@ -218,9 +220,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20px;
+  padding: 20px 0 40px 0;
 }
-.filtr [type=button] {
+.filtr__button {
   width: 207px;
   height: 46px;
   display: -webkit-box;
@@ -243,19 +245,61 @@
   border-radius: 20px;
   margin-right: 5vh;
 }
-.filtr [type=button]:last-child {
+.filtr__button:last-child {
   margin-right: 0;
+}
+.filtr_active {
+  background-color: #fff;
+  color: rgb(55, 128, 107);
 }
 
 .content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 40px;
 }
-.content__card, .content__image {
+.content__card, .content__image-container {
   max-width: 400px;
   width: 20.9vw;
+  border: 2px solid #B0855B;
+  text-align: center;
+  border-radius: 90px 0px;
+  padding: 0 6px;
+  -webkit-box-shadow: 10px 15px 30px 0px rgba(202, 168, 146, 0.45);
+          box-shadow: 10px 15px 30px 0px rgba(202, 168, 146, 0.45);
 }
+.content__title {
+  color: #646464;
+}
+.content__image-container {
+  max-width: 384px;
+  max-height: 410px;
+  border: 0;
+  padding: 0;
+  margin-top: 10px;
+  display: grid;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  overflow-y: auto;
+  overflow-x: clip;
+}
+.content__image {
+  max-width: 384px;
+  width: 20.9vw;
+  border-radius: 90px 0px;
+}
+.content__name {
+  font-family: "Poppins", "Times New Roman", sans-serif;
+  font-weight: 600;
+  color: #212121;
+}
+
 .service {
   padding: 35px 0;
 }

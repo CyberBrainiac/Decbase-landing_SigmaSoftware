@@ -1,12 +1,45 @@
 .content {
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 40px;
 
   &__card {
     max-width: 400px;
     width: 20.9vw;
+    border: 2px solid $page-decore-color-additional;
+    text-align: center;
+    border-radius: $content-bord-rad;
+    padding: 0 6px;
+    box-shadow: 10px 15px 30px 0px rgba(202, 168, 146, 0.45);
+  }
+
+  &__title {
+    color: $text-color-main;
+  }
+
+  &__image-container {
+    @extend .content__card;
+    max-width: calc(400px - 2px*2 - 6px*2);
+    max-height: 410px;
+    border: 0;
+    padding: 0;
+    margin-top: 10px;
+    display: grid;
+    box-shadow: none;
+    overflow-y: auto;
+    overflow-x: clip;
   }
 
   &__image {
-    @extend .content__card;
+    max-width: calc(400px - 2px*2 - 6px*2);
+    width: 20.9vw;
+    border-radius: $content-bord-rad;
+  }
+
+  &__name {
+    font-family: $Poppins;
+    font-weight: 600;
+    color: $heading-color-main;
   }
 }

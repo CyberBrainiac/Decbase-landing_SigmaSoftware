@@ -1,14 +1,18 @@
 .filtr {
   display: flex;
-  margin-top: 20px;
+  padding: 20px 0 40px 0;
 
-  [type="button"] {
+  &__button{
     @include button(207px, 46px);
-    border-radius: 20px;
+    border-radius: $filtr-bord-rad;
     margin-right: 5vh;
 
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  &_active {
+    @include buttonActive();
   }
 }
