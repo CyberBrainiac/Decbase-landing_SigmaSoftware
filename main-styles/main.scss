@@ -7,6 +7,7 @@
 @import '../common.blocks/header/header.scss';
 @import '../common.blocks/hero/hero.scss';
 @import '../common.blocks/service/service.scss';
+@import '../common.blocks/about-us/about-us.scss';
 
 @import '../main-styles/flexible_1600';
 
@@ -20,7 +21,7 @@
   padding: 0 13.4%;
 }
 
-.main-wrap {display: none;}
+.main-wrap { display: none; }
 
 h1 {
   font-family: $Poppins;
@@ -35,7 +36,7 @@ h2 {
   font-family: $Poppins;
   font-weight: 500;
   font-size: 48px;
-  line-height: 78px;
+  line-height: 60px;
   color: $heading-color-main;
   text-transform: capitalize;
 }
@@ -61,6 +62,33 @@ h4 {
 h5 {
   @include heading-5(24px);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

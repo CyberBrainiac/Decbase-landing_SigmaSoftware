@@ -18,3 +18,10 @@ async function send_GET(request) {
     await dontSpamRequest(100); //server can block my request if i will be spam
   }
 }
+
+
+function dontSpamRequest(ms) {
+  return new Promise((resolve) => {
+    setTimeout(resolve, ms);
+  });
+}

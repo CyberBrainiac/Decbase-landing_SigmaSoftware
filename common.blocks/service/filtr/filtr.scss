@@ -4,7 +4,8 @@
 
   &__button{
     @include button(207px, 46px);
-    border-radius: $filtr-bord-rad;
+    border-radius: $button-bord-rad;
+    border-width: calc($button-bord-rad / 1.2); //hehe nice effect)
     margin-right: 5vh;
 
     &:last-child {
@@ -13,6 +14,6 @@
   }
 
   &_active {
-    @include buttonActive();
+    @include button-active();
   }
 }

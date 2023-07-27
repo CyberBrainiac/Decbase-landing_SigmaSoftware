@@ -1,13 +1,13 @@
 .our-design {
-  &__container {
+  &__img-container {
     width: 37.2vw;
     height: 613.3px;
-    border-radius: 140px 0px;
+    border-radius: $img-container-bord-rad;
     border: 2px solid $page-decore-color-additional;
   }
 
-  &__img-wrap {
-    @extend .our-design__container;
+  &__img {
+    @extend .our-design__img-container;
     @include background-image("/common.blocks/hero/our-design/design.png");
     border: 0;
     position: relative;

@@ -20,8 +20,9 @@
 
   &__image-container {
     @extend .content__card;
-    max-width: calc(400px - 2px*2 - 6px*2);
+    border-radius: $content-img-bord-rad;
     max-height: 410px;
+    height: 21.3vw;
     border: 0;
     padding: 0;
     margin-top: 10px;
@@ -33,8 +34,8 @@
 
   &__image {
     max-width: calc(400px - 2px*2 - 6px*2);
-    width: 20.9vw;
-    border-radius: $content-bord-rad;
+    width: 19.4vw;
+    border-radius: $content-img-bord-rad;
   }
 
   &__name {

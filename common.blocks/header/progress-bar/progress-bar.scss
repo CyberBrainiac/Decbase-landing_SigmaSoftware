@@ -1,0 +1,17 @@
+.progress-bar {
+  width: 100%;
+  background-color: $page-decore-color-main;
+  border-radius: calc($button-bord-rad / 2);
+  overflow: hidden;
+  margin-top: 6px;
+  display: flex;
+
+  &__scale {
+    width: 0;
+    height: 5px;
+    background-color: $buttons-color-main;
+    border-radius: calc($button-bord-rad / 2);
+    transition: width $transition-durations-main ease-in-out;
+  }
+}
+

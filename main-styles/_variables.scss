@@ -16,13 +16,15 @@ $page-decore-color-additional: #B0855B;
 $heading-color-main: #212121;
 $text-color-main: #646464;
 
-/*Scrollbar */
-$scrollbar-width: 17px;
+/*Border*/
+$content-bord-rad: 90px 0 90px 0;
+$content-img-bord-rad: 90px 0 20px 0;
+$img-container-bord-rad: 140px 0;
+$registr-bord-rad: 15px 0;
+$cta-bord-rad: 20px 0;
+$button-bord-rad: 20px;
+$button-bord-width: 5px;
 
-/*Border radius*/
-$content-bord-rad: 90px 0px;
-$registr-bord-rad: 15px 0px;
-$cta-bord-rad: 20px 0px;
-$filtr-bord-rad: 20px;
-
+/*Transition*/
+$transition-durations-main: 0.4s;
 

@@ -18,6 +18,7 @@
   background-image: url( goLevelHigher($url));
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -37,13 +38,15 @@
   align-items: center;
   justify-content: center;
   background-color: $buttons-color-main;
-  border: 5px solid $buttons-color-main;
+  border: $button-bord-width solid $buttons-color-main;
+  border-radius: $button-bord-rad;
   color: $page-bg-color-main;
   font-family: $Open-Sans;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   cursor: pointer;
+  transition: $transition-durations-main;
 }
 
 @mixin cta($width, $height) {
@@ -51,10 +54,20 @@
   border-radius: $cta-bord-rad;
 }
 
-@mixin buttonActive() {
+@mixin button-active() {
   background-color: $page-bg-color-main;
   color: $buttons-color-main;
+  border: $button-bord-width solid $buttons-color-main;
 }
+
+@mixin cta-active() {
+  @include button-active();
+  border-radius: $cta-bord-rad;
+}
+
+
+
+
 
 
 

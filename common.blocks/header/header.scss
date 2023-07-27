@@ -1,9 +1,16 @@
 @import './logo/logo.scss';
 @import './navigation/navigation.scss';
+@import './progress-bar/progress-bar.scss';
 
 .header {
   display: flex;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   align-items: center;
   justify-content: space-between;
-  padding: 9.4vh 0;
+  padding-top: 1.6vh;
+  margin-top: 8vh;
+  background-color: $page-bg-color-main;
 }

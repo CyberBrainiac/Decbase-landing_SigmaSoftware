@@ -1,0 +1,37 @@
+.interioris {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__content { width: 28.4vw; }
+
+  &_lower-letter { text-transform: lowercase }
+
+  &__img-container {
+    @extend .our-design__img-container;
+    width: 35vw;
+    height: 711px;
+  }
+
+  &__img {
+    @extend .interioris__img-container;
+    @include background-image("/common.blocks/about-us/interioris/interioris.jpg");
+    background-position-x: 26%;
+    border: 0;
+    position: relative;
+    top: 35px;
+    left: 36px
+  }
+
+  &__description {
+    margin: 10px 0 50px 0;
+  }
+
+  &__cta {
+    @include cta(142px, 42px);
+
+    &:hover {
+      @include button-active();
+    }
+  }
+}

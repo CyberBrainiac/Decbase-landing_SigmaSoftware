@@ -1,8 +1,8 @@
 /*Fonts and Typography*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600&family=Raleway:wght@500&display=swap");
 /*Colors*/
-/*Scrollbar */
-/*Border radius*/
+/*Border*/
+/*Transition*/
 /*Images*/
 /*Buttons*/
 @-webkit-keyframes disappearance {
@@ -149,6 +149,7 @@
   background-image: url("../common.blocks/overlay/table.svg");
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100px;
   width: 100px;
   background-position: bottom center;
@@ -159,6 +160,7 @@
   background-image: url("../common.blocks/overlay/chair.svg");
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100px;
   width: 100px;
   background-position: bottom center;
@@ -169,6 +171,7 @@
   background-image: url("../common.blocks/overlay/closet.svg");
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100px;
   width: 100px;
   background-position: bottom center;
@@ -179,6 +182,7 @@
   background-image: url("../common.blocks/overlay/lamp.svg");
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100px;
   width: 100px;
   background-position: bottom center;
@@ -189,6 +193,7 @@
   background-image: url("../common.blocks/overlay/couch.svg");
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100px;
   width: 100px;
   background-position: bottom center;
@@ -235,19 +240,26 @@
           justify-content: center;
   background-color: rgb(55, 128, 107);
   border: 5px solid rgb(55, 128, 107);
+  border-radius: 20px;
   color: #fff;
   font-family: "Open Sans", "Times New Roman", sans-serif;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   cursor: pointer;
-  border-radius: 20px 0px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 20px 0;
   background-color: #CAA892;
   font-weight: 600;
   border: 5px solid #CAA892;
   padding: 4.9px 18.97px;
   text-transform: capitalize;
-  border-radius: 15px 0px;
+  border-radius: 15px 0;
+}
+.registration__button:hover {
+  background-color: #fff;
+  color: #CAA892;
 }
 
 .navigation {
@@ -261,9 +273,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 2vw;
-     -moz-column-gap: 2vw;
-          column-gap: 2vw;
+  -webkit-column-gap: 1vw;
+     -moz-column-gap: 1vw;
+          column-gap: 1vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -275,22 +287,63 @@
   line-height: 28px;
   color: #212121;
   text-transform: uppercase;
+  border: 5px solid transparent;
+  border-radius: 20px;
+  padding: 4px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.navigation__link:hover {
+  background-color: #fff;
+  color: rgb(55, 128, 107);
+  border: 5px solid rgb(55, 128, 107);
 }
 .navigation_first-link li:first-child {
   color: #646464;
+}
+.navigation_first-link li:first-child:hover {
+  background-color: #fff;
+  color: rgb(55, 128, 107);
+  border: 5px solid rgb(55, 128, 107);
+}
+
+.progress-bar {
+  width: 100%;
+  background-color: #CAA892;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.progress-bar__scale {
+  width: 0;
+  height: 5px;
+  background-color: rgb(55, 128, 107);
+  border-radius: 10px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
 
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 9.4vh 0;
+  padding-top: 1.6vh;
+  margin-top: 8vh;
+  background-color: #fff;
 }
 
 .who-we-are {
@@ -326,27 +379,35 @@
           justify-content: center;
   background-color: rgb(55, 128, 107);
   border: 5px solid rgb(55, 128, 107);
+  border-radius: 20px;
   color: #fff;
   font-family: "Open Sans", "Times New Roman", sans-serif;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   cursor: pointer;
-  border-radius: 20px 0px;
-  text-transform: uppercase;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 20px 0;
   font-size: 18px;
 }
+.who-we-are__cta:hover {
+  background-color: #fff;
+  color: rgb(55, 128, 107);
+  border: 5px solid rgb(55, 128, 107);
+}
 
-.our-design__container, .our-design__img-wrap {
+.our-design__img-container, .interioris__img-container, .years-on-market__img-container, .years-on-market__img, .interioris__img, .our-design__img {
   width: 37.2vw;
   height: 613.3px;
-  border-radius: 140px 0px;
+  border-radius: 140px 0;
   border: 2px solid #B0855B;
 }
-.our-design__img-wrap {
+.our-design__img {
   background-image: url("../common.blocks/hero/our-design/design.png");
   background-origin: border-box;
   background-repeat: no-repeat;
+  background-size: cover;
   border: 0;
   position: relative;
   bottom: 35px;
@@ -358,6 +419,7 @@
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
   padding: 35px 0;
+  margin-top: 8vh;
 }
 
 .filtr {
@@ -380,13 +442,17 @@
           justify-content: center;
   background-color: rgb(55, 128, 107);
   border: 5px solid rgb(55, 128, 107);
+  border-radius: 20px;
   color: #fff;
   font-family: "Open Sans", "Times New Roman", sans-serif;
   font-weight: 700;
   font-size: 16px;
   text-transform: uppercase;
   cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
   border-radius: 20px;
+  border-width: 16.6666666667px;
   margin-right: 5vh;
 }
 .filtr__button:last-child {
@@ -395,6 +461,7 @@
 .filtr_active {
   background-color: #fff;
   color: rgb(55, 128, 107);
+  border: 5px solid rgb(55, 128, 107);
 }
 
 .content {
@@ -413,7 +480,7 @@
   width: 20.9vw;
   border: 2px solid #B0855B;
   text-align: center;
-  border-radius: 90px 0px;
+  border-radius: 90px 0 90px 0;
   padding: 0 6px;
   -webkit-box-shadow: 10px 15px 30px 0px rgba(202, 168, 146, 0.45);
           box-shadow: 10px 15px 30px 0px rgba(202, 168, 146, 0.45);
@@ -422,8 +489,9 @@
   color: #646464;
 }
 .content__image-container {
-  max-width: 384px;
+  border-radius: 90px 0 20px 0;
   max-height: 410px;
+  height: 21.3vw;
   border: 0;
   padding: 0;
   margin-top: 10px;
@@ -435,8 +503,8 @@
 }
 .content__image {
   max-width: 384px;
-  width: 20.9vw;
-  border-radius: 90px 0px;
+  width: 19.4vw;
+  border-radius: 90px 0 20px 0;
 }
 .content__name {
   font-family: "Poppins", "Times New Roman", sans-serif;
@@ -446,6 +514,136 @@
 
 .service {
   padding: 35px 0;
+}
+
+.interioris, .years-on-market {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.interioris__content {
+  width: 28.4vw;
+}
+.interioris_lower-letter {
+  text-transform: lowercase;
+}
+.interioris__img-container, .years-on-market__img-container, .years-on-market__img, .interioris__img {
+  width: 35vw;
+  height: 711px;
+}
+.interioris__img {
+  background-image: url("../common.blocks/about-us/interioris/interioris.jpg");
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: 26%;
+  border: 0;
+  position: relative;
+  top: 35px;
+  left: 36px;
+}
+.interioris__description {
+  margin: 10px 0 50px 0;
+}
+.interioris__cta {
+  width: 142px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgb(55, 128, 107);
+  border: 5px solid rgb(55, 128, 107);
+  border-radius: 20px;
+  color: #fff;
+  font-family: "Open Sans", "Times New Roman", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 20px 0;
+}
+.interioris__cta:hover {
+  background-color: #fff;
+  color: rgb(55, 128, 107);
+  border: 5px solid rgb(55, 128, 107);
+}
+
+.years-on-market__img {
+  background-image: url("../common.blocks/about-us/years-on-market/years-on-market.jpg");
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 0;
+  position: relative;
+  bottom: 35px;
+  right: 36px;
+}
+.years-on-market__content {
+  width: 28.6vw;
+}
+.years-on-market__big-years {
+  background-image: url("../common.blocks/about-us/years-on-market/years-background.jpg");
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 15.6vw;
+  height: 10.4vw;
+}
+.years-on-market__heading {
+  margin: 20px 0 40px 0;
+}
+.years-on-market__cta {
+  width: 175px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgb(55, 128, 107);
+  border: 5px solid rgb(55, 128, 107);
+  border-radius: 20px;
+  color: #fff;
+  font-family: "Open Sans", "Times New Roman", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 20px 0;
+}
+.years-on-market__cta:hover {
+  background-color: #fff;
+  color: rgb(55, 128, 107);
+  border: 5px solid rgb(55, 128, 107);
+}
+
+.about-us {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20vh;
+  padding: 80px 0;
 }
 
 @media screen and (max-width: 1600px) {
@@ -492,7 +690,7 @@ h2 {
   font-family: "Poppins", "Times New Roman", sans-serif;
   font-weight: 500;
   font-size: 48px;
-  line-height: 78px;
+  line-height: 60px;
   color: #212121;
   text-transform: capitalize;
 }

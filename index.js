@@ -4,17 +4,18 @@ window.addEventListener('load', appendScripts, {once: true});
 
 function appendScripts() {
   const allScrptsSrc = [
-    "./common.blocks/overlay/overlay.js",
     "./utils/checkDataType.js",
     "./utils/errorHandlers.js",
     "./utils/GET-request.js",
-    "./utils/dontSpam.js",
     "./utils/tempStorage.js",
-    "./utils/eventHandlers.js",
+    "./utils/userScrollHandler.js",
 
+    "./common.blocks/header/progress-bar/progress-bar.js",
+
+    "./common.blocks/service/serviceHandler.js",
+    "./common.blocks/service/getProduct.js",
     "./common.blocks/service/content/createContent.js",
     "./common.blocks/service/content/removeContent.js",
-    "./common.blocks/service/getProduct.js",
     "./common.blocks/service/filtr/all-filtr.js",
     "./common.blocks/service/filtr/category-filtr.js",
   ];
@@ -42,8 +43,10 @@ function appendScripts() {
   Promise.all(loadedScriptPromise)
     .then(() => {
       console.log("all scripts success loaded");
+
       allFiltr(); //default filter in Service section
-      serviceHandlers();
+      serviceHandlers(); //get API data and check filtrs
+      monitoringUserScroll(); //check is user scrolling
     })
     .catch(error => {
       console.error(`Error load script: ${error.target.src}`);

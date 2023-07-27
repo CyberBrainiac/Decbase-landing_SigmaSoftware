@@ -9,18 +9,30 @@
   
   &__link-wrapper {
     display: flex;
-    column-gap: 2vw;
+    column-gap: 1vw;
     align-items: center;
   }
 
   &__link {
     @include heading-5(16px);
     text-transform: uppercase;
+    border: 5px solid transparent;
+    border-radius: $button-bord-rad;
+    padding: 4px;
+    transition: $transition-durations-main;
+
+    &:hover {
+      @include button-active();
+    }
   }
 
   &_first-link {
     li:first-child {
       color: $text-color-main;
+
+      &:hover {
+        @include button-active();
+      }
     }
   }
 }

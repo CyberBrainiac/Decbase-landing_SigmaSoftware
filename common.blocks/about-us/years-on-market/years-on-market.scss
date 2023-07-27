@@ -1,0 +1,39 @@
+.years-on-market {
+  @extend .interioris;
+  
+  &__img-container {
+    @extend .interioris__img-container;
+  }
+
+  &__img {
+    @extend .years-on-market__img-container;
+    @include background-image("/common.blocks/about-us/years-on-market/years-on-market.jpg");
+    background-position: center;
+    border: 0;
+    position: relative;
+    bottom: 35px;
+    right: 36px
+  }
+
+  &__content {
+    width: 28.6vw;
+  }
+
+  &__big-years {
+    @include background-image("/common.blocks/about-us/years-on-market/years-background.jpg");
+    width: 15.6vw;
+    height: 10.4vw;
+  }
+
+  &__heading {
+    margin: 20px 0 40px 0;
+  }
+
+  &__cta {
+    @include cta(175px, 44px);
+
+    &:hover {
+      @include button-active();
+    }
+  }
+}

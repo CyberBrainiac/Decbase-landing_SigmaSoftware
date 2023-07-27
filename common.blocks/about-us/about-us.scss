@@ -1,0 +1,10 @@
+@import './interioris/interioris.scss';
+@import './years-on-market/years-on-market.scss';
+
+.about-us {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 20vh;
+  padding: 80px 0;
+}

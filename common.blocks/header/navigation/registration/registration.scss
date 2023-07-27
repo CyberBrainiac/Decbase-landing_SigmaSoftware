@@ -11,6 +11,11 @@
     padding: 4.9px 18.97px;
     text-transform: capitalize;
     border-radius: $registr-bord-rad;
+
+    &:hover {
+      background-color: $page-bg-color-main;
+      color: $page-decore-color-main;
+    }
   }
 }
 

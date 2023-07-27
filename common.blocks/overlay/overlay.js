@@ -1,4 +1,5 @@
 "use strict"
+
 deleteOverlay();
 
 function deleteOverlay() {
@@ -16,6 +17,6 @@ function deleteOverlay() {
 			overlay.classList.add("overlay_disappearance");
 
 			document.querySelector(".main-wrap").style.display = "block";
-		}, 5000);
+		}, 5);
 	});
 }
