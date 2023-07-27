@@ -5,6 +5,13 @@ $Open-Sans: 'Open Sans', 'Times New Roman', sans-serif;
 $Poppins: 'Poppins', 'Times New Roman', sans-serif;
 $Raleway: 'Raleway', 'Times New Roman', sans-serif;
 
+@font-face {
+  font-family: 'Basic Sans Sf Bold';
+  src:  url('../fonts/Basic-Sans-SF-Bold/basic-sans-sf-bold.ttf') format('truetype');
+  font-style: normal;
+  font-display: fallback;
+}
+
 /*Colors*/
 $page-bg-color-main: #fff;
 $page-bg-color-additional: #f8f8f8;
