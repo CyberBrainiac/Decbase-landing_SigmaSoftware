@@ -12,6 +12,7 @@
 @import '../common.blocks/testimonials/testimonials.scss';
 
 @import '../main-styles/flexible_1600';
+@import '../main-styles/flexible_1000';
 
 .body {
   color: $text-color-main;
@@ -20,10 +21,13 @@
   line-height: 30px;
   background-color: $page-bg-color-main;
   width: 100%;
-  padding: 0 13.4%;
 }
 
-.main-wrap { display: none; }
+.main-wrap { 
+  display: none;
+  padding-left: $page-main-left-padding;
+  padding-right: $page-main-left-padding;
+}
 
 h1 {
   font-family: $Poppins;
@@ -64,49 +68,6 @@ h4 {
 h5 {
   @include heading-5(24px);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

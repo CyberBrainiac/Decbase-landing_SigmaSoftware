@@ -1,4 +1,4 @@
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1599.9px) {
   .navigation {
     column-gap: 1rem;
 
@@ -7,5 +7,10 @@
       column-gap: 1.5vw;
       flex-wrap: wrap;
     }
+  }
+
+  .work-achives__vector {
+    transform: scaleY(2);
+    top: 45%;
   }
 }

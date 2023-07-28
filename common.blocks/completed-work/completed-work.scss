@@ -1,1 +1,22 @@
 @import './work-achives/work-achives.scss';
+
+.completed-work {
+  @include section-full-width();
+  padding: 3vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+
+  &__heading {
+    text-align: center;
+  }
+
+  &_upper-letter {
+    text-transform: uppercase;
+  }
+
+  &_lower-letter {
+    text-transform: lowercase;
+  }
+}
