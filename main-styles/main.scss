@@ -10,6 +10,9 @@
 @import '../common.blocks/about-us/about-us.scss';
 @import '../common.blocks/completed-work/completed-work.scss';
 @import '../common.blocks/testimonials/testimonials.scss';
+@import '../common.blocks/news/news.scss';
+@import '../common.blocks/sign-up/sign-up.scss';
+@import '../common.blocks/footer/footer.scss';
 
 @import '../main-styles/flexible_1600';
 @import '../main-styles/flexible_1000';
@@ -57,17 +60,39 @@ h3 {
 }
 
 h4 {
-  font-family: $Open-Sans;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 78px;
-  color: $heading-color-main;
-  text-transform: capitalize;
+	@include heading-4();
 }
 
 h5 {
   @include heading-5(24px);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

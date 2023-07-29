@@ -1,29 +1,65 @@
 .testimonials-container {
   overflow: hidden;
-  width: calc(
-    px2vw($testimonials-card-w) * 2 + 
-    px2vw($testimonials-card-margin-left) * 2 +
-    $testimonials-container-padding
-    ); //visible 2 card, 
-    //$testimonials-container-padding >= testimonials-card-shad: blur-radius/ I need display right shadow 
-
-  padding: $testimonials-container-padding 0;
+	text-align: left;
+	padding: 42px 0;
+  // width: calc( 
+	// 	(px2vw(65px) + px2vw(42px) + px2vw(39px) + px2vw($testimonials-card-w)) * 2
+  // ); 
+	//visible 2 card, 
+	//65px - half-img-width
+	//42px - right shadow
+	//39px - length between shadow and next card
+	//40px - padding right and left
 
   &__strip {
     position: relative;
+		left: 0;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     width: calc( 
-      px2vw($testimonials-card-w) * 5 + 
-    ($testimonials-card-margin-left * 5)
+			(px2vw(65px) + px2vw(42px) + px2vw(39px) + px2vw($testimonials-card-w)) * 7
     ); //5 card
+
+		&_transition {
+			transition: $transition-durations-main;
+		}
   }
 
   &__card {
+		position: relative;
     width: px2vw($testimonials-card-w);
     box-shadow: $testimonials-card-shad;
     border-radius: $testimonials-card-bord-rad;
-    margin-left: $testimonials-card-margin-left;
+		padding: 41px 2vw 60px 100px;
+		margin-right: px2vw(81px);
+		margin-left: 65px;
   }
+
+	&__heading :first-child {
+		@include heading-4();
+		line-height: normal;
+		margin-bottom: 10px;
+	}
+
+	#testimonials-card-1::before {
+		@include pseudo-elem-img("/common.blocks/testimonials/testimonials-container/Pichai-Sundararajan.jpg");
+	}
+
+	#testimonials-card-2::before {
+		@include pseudo-elem-img("/common.blocks/testimonials/testimonials-container/Rekha-Varadwaz.jpg");
+		background-position: center;
+	}
+
+	#testimonials-card-3::before {
+		@include pseudo-elem-img("/common.blocks/testimonials/testimonials-container/Timothy-Cook.jpg");
+	}
+
+	#testimonials-card-4::before {
+		@include pseudo-elem-img("/common.blocks/testimonials/testimonials-container/Elon-Musk.jpg");
+	}
+
+	#testimonials-card-5::before {
+		@include pseudo-elem-img("/common.blocks/testimonials/testimonials-container/Satya-Nadella.jpg");
+	}
 }

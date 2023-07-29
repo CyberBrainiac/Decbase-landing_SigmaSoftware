@@ -11,8 +11,8 @@
 /*Transition*/
 /*Padding*/
 /*Width*/
-/*Margin*/
 /*Shadow*/
+/*Heading*/
 /*Images*/
 /*Buttons*/
 /*Pseudo element*/
@@ -789,11 +789,12 @@
 
 .testimonials-container {
   overflow: hidden;
-  width: calc(29.7916666667vw * 2 + 7.8125vw * 2 + 40px);
-  padding: 40px 0;
+  text-align: left;
+  padding: 42px 0;
 }
 .testimonials-container__strip {
   position: relative;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -803,14 +804,107 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: calc(29.7916666667vw * 5 + 750px);
+  width: calc((3.3854166667vw + 2.1875vw + 2.03125vw + 29.7916666667vw) * 7);
+}
+.testimonials-container__strip_transition {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .testimonials-container__card {
+  position: relative;
   width: 29.7916666667vw;
   -webkit-box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
           box-shadow: 7px 7px 30px 5px rgba(66, 96, 84, 0.15);
   border-radius: 70px 0;
-  margin-left: 150px;
+  padding: 41px 2vw 60px 100px;
+  margin-right: 4.21875vw;
+  margin-left: 65px;
+}
+.testimonials-container__heading :first-child {
+  font-family: "Open Sans", "Times New Roman", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 78px;
+  color: #212121;
+  text-transform: capitalize;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.testimonials-container #testimonials-card-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+  height: 130px;
+  background-image: url("../common.blocks/testimonials/testimonials-container/Pichai-Sundararajan.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 35px 0;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.testimonials-container #testimonials-card-2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+  height: 130px;
+  background-image: url("../common.blocks/testimonials/testimonials-container/Rekha-Varadwaz.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 35px 0;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-position: center;
+}
+.testimonials-container #testimonials-card-3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+  height: 130px;
+  background-image: url("../common.blocks/testimonials/testimonials-container/Timothy-Cook.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 35px 0;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.testimonials-container #testimonials-card-4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+  height: 130px;
+  background-image: url("../common.blocks/testimonials/testimonials-container/Elon-Musk.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 35px 0;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.testimonials-container #testimonials-card-5::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 130px;
+  height: 130px;
+  background-image: url("../common.blocks/testimonials/testimonials-container/Satya-Nadella.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 35px 0;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .testimonials {
