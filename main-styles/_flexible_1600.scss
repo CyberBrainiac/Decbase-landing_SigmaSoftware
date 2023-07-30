@@ -13,4 +13,16 @@
     transform: scaleY(2);
     top: 45%;
   }
+
+	.years-on-market__big-years {
+		font-size: 220px;
+	}
+
+	.testimonials-container__card {
+
+		&::after {
+			top: 10%;
+			left: 75%;
+		}
+	}
 }

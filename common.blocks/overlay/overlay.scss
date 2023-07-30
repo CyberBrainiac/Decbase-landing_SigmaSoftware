@@ -22,26 +22,31 @@
 	&__icon-table {
 		@include loader-icon('/common.blocks/overlay/table.svg');
 		animation: loader-1-item 2.5s ease-in-out 0s infinite normal none;
+		background-size: contain;
 	}
 
 	&__icon-chair {
 		@include loader-icon('/common.blocks/overlay/chair.svg');
 		animation: loader-2-item 2.52s ease-in-out 0s infinite normal none;
+		background-size: contain;
 	}
 
 	&__icon-closet {
 		@include loader-icon('/common.blocks/overlay/closet.svg');
 		animation: loader-3-item 2.54s ease-in-out 0s infinite normal none;
+		background-size: contain;
 	}
 
 	&__icon-lamp {
 		@include loader-icon('/common.blocks/overlay/lamp.svg');
 		animation: loader-4-item 2.52s ease-in-out 0s infinite normal none;
+		background-size: contain;
 	}
 
 	&__icon-couch {
 		@include loader-icon('/common.blocks/overlay/couch.svg');
 		animation: loader-5-item 2.5s ease-in-out 0s infinite normal none;
+		background-size: contain;
 	}
 }
 

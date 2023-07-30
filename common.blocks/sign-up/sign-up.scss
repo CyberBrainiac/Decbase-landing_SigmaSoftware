@@ -1,1 +1,22 @@
 @import './sign-form/sign-form.scss';
+
+.sign-up {
+	text-align: center;
+	padding: 80px 0 100px 0;
+
+	&__heading {
+		letter-spacing: 3.84px;
+	}
+
+	&__horizontal-line {
+		border: 1px solid #C4C4C4;;
+		margin: 40px auto;
+		width: px2vw(461px);
+	}
+
+	&__description {
+		width: px2vw(647px);
+		font-size: 18px;
+		margin: 0 auto;
+	}
+}

@@ -1,4 +1,9 @@
 @media screen and (max-width: 999.9px) {
+
+	.hero {
+		column-gap: 5vw;
+	}
+	
   .work-achives__vector {
     transform: scaleY(3);
     top: 35%;

@@ -5,5 +5,6 @@ function monitoringUserScroll() {
 
   function userScrollHandler(ev) {
     updateProgressBar();
+		newsHandler();
   }
 }

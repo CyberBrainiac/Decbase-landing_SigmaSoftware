@@ -8,9 +8,10 @@
   &_lower-letter { text-transform: lowercase }
 
   &__img-container {
-    @extend .our-design__img-container;
     width: 35vw;
     height: 711px;
+    border-radius: $img-container-bord-rad;
+    border: 2px solid $page-decore-color-additional;
   }
 
   &__img {

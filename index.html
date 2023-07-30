@@ -121,7 +121,7 @@
 
     <div class="years-on-market">
       <div class="years-on-market__content">
-        <div class="years-on-market__big-years"></div>
+        <div class="years-on-market__big-years">20</div>
         <h2 class="years-on-market__heading">years of successful <p>working</p> the market</h2>
         <a class="years-on-market__cta" href="http://reminders.findmoore.net/">
           <span>read more</span>
@@ -182,8 +182,12 @@
 		</h2>
 
     <div class="testimonials__nav">
-      <button class="testimonials__button" id="testimonials-button-left" type="button"><</button>
-      <button class="testimonials__button" id="testimonials-button-right" type="button">></button>
+      <button class="testimonials__button testimonials__button_left" type="button">
+				<img src="./common.blocks/testimonials/arrow-left.svg" alt="show left testimonial">
+			</button>
+      <button class="testimonials__button testimonials__button_right" type="button">
+				<img src="./common.blocks/testimonials/arrow-right.svg" alt="show right testimonial">
+			</button>
     </div>
 
 		<div class="testimonials-container">
@@ -239,18 +243,18 @@
 		<div class="news-container">
 			<div class="news-container__wrap">
 				<div class="news-container__img-container">
-					<div class="news-container__img"></div>
+					<div class="news-container__img" id="news-img-1"></div>
 				</div>
 				<h5 class="news-container__heading">2020 interior design trends</h5>
 				<p class="news-container__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.</p>
 				<a class="news-container__cta" href="http://reminders.findmoore.net/">
-					<span>continue reading</span>
+					<span>continue reading....</span>
 				</a>
 			</div>
 
 			<div class="news-container__wrap">
 				<div class="news-container__img-container">
-					<div class="news-container__img"></div>
+					<div class="news-container__img" id="news-img-2"></div>
 				</div>
 				<h5 class="news-container__heading">
 					28 notable product
@@ -260,7 +264,7 @@
 				</h5>
 				<p class="news-container__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua.</p>
 				<a class="news-container__cta" href="http://reminders.findmoore.net/">
-					<span>continue reading</span>
+					<span>continue reading....</span>
 				</a>
 			</div>
 		</div>
@@ -274,11 +278,13 @@
 			Find out early about all upcoming promotions and new product releases with our newsletter.
 		</p>
 
-		<form clas="sign-form" autocomplete="on">
+		<form class="sign-form" autocomplete="on">
 			<input type="text" name="name" placeholder="Enter your name....." autocomplete="on" required>
 			<input type="text" name="surname" placeholder="Enter your surname....." autocomplete="on" required>
-			<input type="email" name="email" autocomplete="on" required>
-			<input class="sign-form__cta" type="submit" value="subscribe">
+			<input type="email" name="email" placeholder="Enter your e-mail....." autocomplete="on" required>
+			<button class="sign-form__cta" type="submit">
+				subscribe
+			</button>
 		</form>
 	</section>
 
@@ -348,6 +354,15 @@
 		</div>
 	</footer>
 	</main>
+
+	<div class="surprize">
+		<div class="surprize__container">
+			<h2>today: <span class="surprize__date"></span></h2>
+			<h2>for you <span class="surprize__surname"></span> my kitten</h2>
+			<div class="surprize__kittens"></div>
+			<h3>discount 120% when placing an order =)</h3>
+		</div>
+	</div>
 
 	<script src="./common.blocks/overlay/overlay.js"></script>
   <script src="./index.js"></script>

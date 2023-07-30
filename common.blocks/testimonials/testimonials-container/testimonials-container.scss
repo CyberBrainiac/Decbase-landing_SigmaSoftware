@@ -34,6 +34,16 @@
 		padding: 41px 2vw 60px 100px;
 		margin-right: px2vw(81px);
 		margin-left: 65px;
+
+		&::after {
+			@include pseudo-elem();
+			content: '”';
+			font-size: 96px;
+			color: $page-decore-color-additional;
+			font-family: 'Basic Sans Sf Bold';
+			top: 18%;
+			left: 85%;
+		}
   }
 
 	&__heading :first-child {

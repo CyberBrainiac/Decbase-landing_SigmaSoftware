@@ -5,7 +5,8 @@
 
   img {
     @include image-cover();
+		object-fit: contain;
     position: relative;
-    left: 1px;
+    left: 2px;
   }
 }

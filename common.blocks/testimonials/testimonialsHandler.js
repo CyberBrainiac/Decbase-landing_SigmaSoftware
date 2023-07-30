@@ -10,8 +10,8 @@ function testimonialsHandler() {
 		calcCardWidth();
 	}); 
 
-	const leftButton = document.querySelector("#testimonials-button-left");
-	const rightButton = document.querySelector("#testimonials-button-right");
+	const leftButton = document.querySelector(".testimonials__button_left");
+	const rightButton = document.querySelector(".testimonials__button_right");
 
 	leftButton.addEventListener('click', leftButtonHandler);
 	rightButton.addEventListener('click', rightButtonHandler);

@@ -4,12 +4,15 @@ window.addEventListener('load', appendScripts, {once: true});
 
 function appendScripts() {
   const allScrptsSrc = [
+		/**SCRIPTS HELPER*/
+		"./utils/userScrollHandler.js",
     "./utils/checkDataType.js",
     "./utils/errorHandlers.js",
     "./utils/GET-request.js",
     "./utils/tempStorage.js",
     "./utils/throttle.js",
 
+		/**TARGET SCRIPT*/
     "./common.blocks/service/getProduct.js",
     "./common.blocks/service/content/createContent.js",
     "./common.blocks/service/content/removeContent.js",
@@ -17,12 +20,16 @@ function appendScripts() {
     "./common.blocks/service/filtr/category-filtr.js",
     "./common.blocks/completed-work/work-achives/moveBlock.js",
 		"./common.blocks/testimonials/testimonials-container/calcCardWidth.js",
+		"./common.blocks/news/isElementVisible.js",
+		"./common.blocks/surprize/surprize.js",
 
+		/**HANDLERS*/
 		"./common.blocks/header/progress-bar/progress-bar.js",
-    "./common.blocks/header/progress-bar/userScrollHandler.js",
     "./common.blocks/completed-work/work-achives/mouseMoveHandler.js",
     "./common.blocks/service/serviceHandler.js",
 		"./common.blocks/testimonials/testimonialsHandler.js",
+		"./common.blocks/news/newsHandler.js",
+		"./common.blocks/sign-up/formHandler.js",
   ];
 
   const loadedScriptPromise = [];
@@ -53,7 +60,8 @@ function appendScripts() {
       monitoringMousemove();  //check is user moving mouse
       serviceHandlers(); //get API data and check filtrs
       allFiltr(); //default filter in Service section
-			testimonialsHandler();
+			testimonialsHandler(); //set testimonial to base position
+			formHandler() //listen form events
     })
     .catch(error => {
       console.error(error);

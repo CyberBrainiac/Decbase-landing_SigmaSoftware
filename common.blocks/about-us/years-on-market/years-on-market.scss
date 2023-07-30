@@ -20,9 +20,15 @@
   }
 
   &__big-years {
-    @include background-image("/common.blocks/about-us/years-on-market/years-background.jpg");
-    width: 15.6vw;
-    height: 10.4vw;
+		background: url(https://s3-alpha-sig.figma.com/img/8334/8521/ec533a8c7b8b358bb90dd684fa9d0778?Expires=1691366400&Signature=nqiTcwwfnedzW~8fLa4m22w8WgB2kaFrxlunRmQjkgXw1frKxrXIJMKjPCcMknP7NcIFokcpWRYVnFRvjd8It6z2bkFl-VgJChrmirxwFx~TcG4tEvfSWGJk3FMrldfnHX2g6vMo1b3w0Vhn8BLq-6iyB46U3kapPz~X6Hr-DspVTi7HLn~OVTaJ8QbYblAUsUIkgniQkjcV2OkpuuuKu4Wb2mN7OBBt~Keb849HqfKawSYBs6JNEKBwov-GyO8cE4qOYB8ULN5Gp-uKaOwHahdejl1dXxwkdwME2mF9aZjDEpLJqrPSwoGakRIumDtZMfb4WzLMvlPtEw90vwv~0g__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4);
+		background-clip: text;
+		background-position-y: 55%;
+		background-position-x: center;
+		color: transparent;
+		font-size: 288px;
+		line-height: 240px;
+		font-weight: 700;
+		letter-spacing: -2.88px;
   }
 
   &__heading {

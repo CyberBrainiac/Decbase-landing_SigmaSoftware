@@ -1,0 +1,61 @@
+.news-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	margin: 0 $page-main-left-padding;
+
+	&__wrap {
+		width: px2vw(606px);
+		text-align: left;
+	}
+
+	&__img-container {
+		width: px2vw(554px);
+    height: px2vw(387px);
+    border-radius: 100px 0;
+    border: 2px solid $page-decore-color-additional;
+		margin-bottom: 40px;
+	}
+
+	&__img {
+		@extend .news-container__img-container;
+    border: 0;
+    position: relative;
+    bottom: 17.23px;
+    right: 15.58px;
+		opacity: 0;
+		transition: $transition-durations-main * 2;
+
+		&:hover {
+			transform: scale(1.15);
+		}
+	}
+
+	&__cta {
+		@include cta(271px, 53px);
+    font-size: 18px;
+		font-weight: 600;
+		border-radius: 25px 0;
+		margin-top: 40px;
+
+    &:hover {
+      @include button-active();
+    }
+	}
+
+	#news-img-1 {
+		@include background-image("/common.blocks/news/news-container/interior-design-img.jpg");
+	}
+
+	#news-img-2 {
+		@include background-image("/common.blocks/news/news-container/28-product-img.jpg");
+	}
+
+	&_lower-letter {
+		text-transform: lowercase;
+	}
+
+	&_upper-letter {
+		text-transform: uppercase;
+	}
+}
