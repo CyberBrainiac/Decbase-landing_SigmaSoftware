@@ -2,5 +2,15 @@
 @import './content/content.scss';
 
 .service {
-  padding: 35px 0;
+  padding: 220px 0 250px 0;
+	position: relative;
+
+	&_decore {
+		@include background-decore("/common.blocks/service/background-decore-big.svg");
+		width: px2vw(246px);
+		height: 255px;
+    transform: translateY(50%);
+		top: 80%;
+		left: 100%;
+	}
 }

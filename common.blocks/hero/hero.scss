@@ -7,4 +7,12 @@
   grid-template-rows: 1fr;
   padding: 35px 0;
   margin-top: 8vh;
+
+	&_decore {
+		@include background-decore("/images/background-decore.svg");
+		width: 212px;
+		height: 153px;
+		top: 100%;
+		left: 4px;
+	}
 }

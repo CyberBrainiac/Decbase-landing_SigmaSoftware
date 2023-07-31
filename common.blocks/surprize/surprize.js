@@ -11,7 +11,22 @@ function surprize(surname) {
 	let gmtPosition = date.indexOf("GMT") - 12;
 	let shortDate = deleteDay.slice(0, gmtPosition);
 
+	let img = document.createElement("img");
+	let VPWidth = (window.innerWidth / 3).toFixed();
+	let VPHeight = (window.innerHeight / 3).toFixed();
+	let url = 'http://placekitten.com' + `/${VPWidth}/${VPHeight}`;
+
+	/*Send request to API*/
+	fetch(url).then(
+		(response) => {
+			img.src = response.url;
+			kittenContainer.appendChild(img);
+		}
+	).catch(err => console.log(err));
+
 	dateContainer.textContent = shortDate;
+	surnameContainer.textContent = '"' + surname + '"';
+	surnameContainer.style.color = "rgb(55, 128, 107)";
 
 	overlay.style.display = "flex";
 	setTimeout(() => {

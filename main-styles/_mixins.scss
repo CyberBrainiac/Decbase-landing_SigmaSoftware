@@ -95,6 +95,13 @@
 	transform: translate(-50%, -50%);
 }
 
+@mixin background-decore($url) {
+	@include pseudo-elem();
+	background-image: url( goLevelHigher($url));
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
 /*Section*/
 @mixin section-full-width() {
   position: relative;
@@ -102,6 +109,23 @@
   width: calc(100% + $page-main-left-padding * 2);
   background-color: $page-bg-color-additional;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

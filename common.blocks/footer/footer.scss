@@ -1,3 +1,58 @@
 @import './logo/logo.scss';
 @import './follow-us/follow-us.scss';
 @import './copyright-law/copyright-law.scss';
+
+.footer {
+	@include section-full-width();
+
+	&__links {
+		display: grid;
+		grid-template-columns: 1.5fr 1.2fr 1fr 1.4fr 1fr;
+		padding-left: px2vw(286px);
+		padding-right: px2vw(286px);
+		padding-top: 93px;
+		padding-bottom: 69px;
+	}
+
+	&__links-heading {
+		text-transform: capitalize;
+		line-height: 40px;
+
+		&_low-letter {
+			text-transform: lowercase;
+		}
+	}
+
+	
+	&__links-quick {
+		padding-left: px2vw(70px);
+	}
+
+	&__links-company {
+		padding-left: px2vw(60);
+	}
+
+	&__links-contact {
+		padding-left: px2vw(80px);
+	}
+
+	&_decore {
+		@include background-decore("/images/background-decore.svg");
+		width: 212px;
+		height: 153px;
+		left: 13px;
+    transform: translateY(-50%);
+	}
+
+	a {
+		display: block;
+		line-height: 50px;
+		font-size: 18px;
+	}
+
+	p {
+		line-height: 50px;
+		font-size: 18px;
+	}
+
+}

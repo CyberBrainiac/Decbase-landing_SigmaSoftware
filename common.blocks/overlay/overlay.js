@@ -17,6 +17,6 @@ function deleteOverlay() {
 			overlay.classList.add("overlay_disappearance");
 
 			document.querySelector(".main-wrap").style.display = "block";
-		}, 5);
+		}, 5000);
 	});
 }

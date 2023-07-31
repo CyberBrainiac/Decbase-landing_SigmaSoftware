@@ -14,6 +14,7 @@
 @import '../common.blocks/sign-up/sign-up.scss';
 @import '../common.blocks/footer/footer.scss';
 @import '../common.blocks/surprize/surprize.scss';
+@import '../common.blocks/user-afk/user-afk.scss';
 
 @import '../main-styles/flexible_1600';
 @import '../main-styles/flexible_1000';
@@ -67,42 +68,6 @@ h4 {
 h5 {
   @include heading-5(24px);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

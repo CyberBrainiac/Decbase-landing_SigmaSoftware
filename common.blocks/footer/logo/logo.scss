@@ -1,0 +1,12 @@
+.logo {
+	width: 151px;
+	height: 47px;
+	margin-bottom: 20px;
+
+	&__additional-information {
+		font-size: 18px;
+		line-height: 28px;
+		width: px2vw(350px);
+    position: absolute;
+	}
+}

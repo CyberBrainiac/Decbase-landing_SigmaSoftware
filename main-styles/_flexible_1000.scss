@@ -2,10 +2,34 @@
 
 	.hero {
 		column-gap: 5vw;
+
+		&_decore {
+			top: 125%;
+		}
 	}
 	
   .work-achives__vector {
     transform: scaleY(3);
     top: 35%;
   }
+
+	.footer {
+		&__links {
+			grid-template-columns: 1fr 1fr 1fr 1.2fr 1fr;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	
+		&__links-quick {
+			padding-left: 10px;
+		}
+	
+		&__links-company {
+			padding-left: 10px;
+		}
+	
+		&__links-contact {
+			padding-left: 10px;
+		}
+	}
 }

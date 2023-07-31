@@ -10,13 +10,17 @@
 
   &__heading {
     text-align: center;
-  }
 
-  &_upper-letter {
-    text-transform: uppercase;
-  }
+		&_block-lvl {
+			display: block;
+		}
 
-  &_lower-letter {
-    text-transform: lowercase;
+		&_upper-letter {
+			text-transform: uppercase;
+		}
+	
+		&_lower-letter {
+			text-transform: lowercase;
+		}
   }
 }

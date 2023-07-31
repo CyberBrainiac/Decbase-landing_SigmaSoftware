@@ -4,7 +4,10 @@
   align-items: center;
 
   &__content { width: 28.4vw; }
-
+ 
+	&__heading_block-lvl {
+		display: block;
+	}
   &_lower-letter { text-transform: lowercase }
 
   &__img-container {

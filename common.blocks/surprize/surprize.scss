@@ -3,4 +3,13 @@
 	display: none;
 	background: url(https://otkritkis.com/wp-content/uploads/2022/07/htjd4.gif);
 	background-color: $page-bg-color-additional;
+	
+	&__container {
+		text-align: center;
+	}
+
+	&__kittens img{
+		border-radius: calc($button-bord-rad * 2);
+		margin: 40px 0;
+	}
 }

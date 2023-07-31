@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./main-styles/myReset.css" />
 	<link rel="stylesheet" href="./main-styles/main.css" />
+	<link rel="icon" type="image/png" href="./images/Decbase-icon.png" />
 	<title>Decbase</title>
 </head>
 
@@ -53,7 +54,7 @@
 			</ul>
 
       <div class="registration">
-        <a href="#sign-up" class="registration__button" type="button">
+        <a href="#sign-up" class="registration__button">
           <span>sign up</span>
         </a>
       </div>
@@ -65,6 +66,7 @@
 
 
 	<section id="hero" class="hero">
+		<div class="hero_decore"></div>
 		<div class="who-we-are">
 			<h3 class="who-we-are__tegline">modern interior</h3>
 			<h1 class="who-we-are__heading">create your interior design.</h1>
@@ -83,6 +85,7 @@
 
 
   <section id="service" class="service">
+		<div class="service_decore"></div>
     <h3>what we do</h3>
     <h2>our service</h2>
 
@@ -98,6 +101,8 @@
 
 
   <section class="about-us" id="about-us">
+		<div class="about-us_decore"></div>
+		<div class="about-us_decore-split"></div>
     <div class="interioris">
       <div class="interioris__img-container">
         <div class="interioris__img"></div>
@@ -107,14 +112,14 @@
         <h3 class="interioris__tegline">about us</h3>
         <h2 class="interioris__heading">
           interioris the will 
-          <span class="interioris_lower-letter">of</span>
-          an epoch mextreo
+          <span class="interioris__heading_block-lvl"><span class="interioris_lower-letter">of</span>
+          an epoch mextreo</span>
         </h2>
         <p class="interioris__description">
           There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form injected humour, or randomised words which don't look even slightly believable.If you are going to use a passage of Lorem Ipsum, sure there isn't anything embarrassing hidden the middleof text. All the Lorem Ipsum generators on the Internettend to repeat predefined chunks as necessary,making this the first true generator on the Internet.
         </p>
         <a class="interioris__cta" href="http://reminders.findmoore.net/">
-          <span>contact</span>
+          <span>learn more</span>
         </a>
       </div>
     </div>
@@ -122,7 +127,7 @@
     <div class="years-on-market">
       <div class="years-on-market__content">
         <div class="years-on-market__big-years">20</div>
-        <h2 class="years-on-market__heading">years of successful <p>working</p> the market</h2>
+        <h2 class="years-on-market__heading">years of successful <span class="years-on-market__heading_block-lvl">working</span> the market</h2>
         <a class="years-on-market__cta" href="http://reminders.findmoore.net/">
           <span>read more</span>
         </a>
@@ -137,10 +142,10 @@
 
 	<section class="completed-work" id="completed-work">
 		<h2 class="completed-work__heading">
-			<p>3000+ completed work</p>
+			<span class="completed-work__heading_block-lvl">3000+ completed work</span>
 			which
-			<span class="completed-work_upper-letter">we</span>
-			<span class="completed-work_lower-letter">have</span>
+			<span class="completed-work__heading_upper-letter">we</span>
+			<span class="completed-work__heading_lower-letter">have</span>
 			successfully done
 		</h2>
 
@@ -175,6 +180,7 @@
 
 
 	<section class="testimonials" id="testimonials">
+		<div class="testimonials_decore"></div>
 		<h3 class="testimonials__tegline">testimonials</h3>
 		<h2 class="testimonials__heading">
 			client
@@ -231,6 +237,14 @@
 					</p>
 					<p class="testimonials-container__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
+
+				<div class="testimonials-container__card" id="testimonials-card-6">
+					<p class="testimonials-container__heading">
+						<span>benedetto vigna</span>
+						<span>/CEO at Ferrari inc</span>
+					</p>
+					<p class="testimonials-container__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -272,6 +286,7 @@
 
 
 	<section class="sign-up" id="sign-up">
+		<div class="sign-up_decore"></div>
 		<h2 class="sign-up__heading">don't forget to sign up</h2>
 		<div class="sign-up__horizontal-line"></div>
 		<p class="sign-up__description">
@@ -290,6 +305,7 @@
 
 
 	<footer class="footer" id="footer">
+		<div class="footer_decore"></div>
 		<div class="footer__links">
 			<div class="logo">
 				<a class="logo__link" href="#" target="_self">
@@ -309,7 +325,7 @@
 
 			<div class="footer__links-company">
 				<h5 class="footer__links-heading">company</h5>
-				<a href="about-us">About Company</a>
+				<a href="#about-us">About Company</a>
 				<a href="#testimonials">Our Testimonials</a>
 				<a href="#news">Latest News</a>
 				<a>Our mission</a>
@@ -317,7 +333,7 @@
 			</div>
 
 			<div class="footer__links-contact">
-				<h5 class="footer__links-heading">contact us</h5>
+				<h5 class="footer__links-heading">contact <span class="footer__links-heading_low-letter">us</span></h5>
 				<a>Sagrada Familia, Herba</a>
 				<a>Street Front USA</a>
 				<p>brandoxide@gmail.com</p>
@@ -357,10 +373,17 @@
 
 	<div class="surprize">
 		<div class="surprize__container">
-			<h2>today: <span class="surprize__date"></span></h2>
-			<h2>for you <span class="surprize__surname"></span> my kitten</h2>
+			<h2>for you <span class="surprize__surname"></span></h2>
 			<div class="surprize__kittens"></div>
+			<h2>today: <span class="surprize__date"></span></h2>
 			<h3>discount 120% when placing an order =)</h3>
+		</div>
+	</div>
+
+	<div class="user-afk">
+		<div class="user-afk__container">
+			<h2 class="user-afk__message">Are you still here?</h2>
+			<button class="user-afk__button">YES!</button>
 		</div>
 	</div>
 

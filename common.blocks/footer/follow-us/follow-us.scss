@@ -1,0 +1,36 @@
+.follow-us {
+	text-align: center;
+	
+	&__heading {
+		text-transform: capitalize;
+		line-height: 50px;
+	}
+
+	&__social-wrap {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+		& > div:nth-child(2) {
+			background-color: $buttons-color-main;
+		}
+
+		& > div:last-child {
+			margin-right: 0;
+			margin-left: 16px;
+			position: relative;
+			top: -2px;
+		}
+	}
+
+	&__social {
+		display: flex;
+    align-items: center;
+    justify-content: center;
+		width: 37.166px;
+		height: 37.166px;
+		border-radius: 50%;
+		background-color: #D5D5D5;
+		margin-right: 8px;
+	}
+}

@@ -2,6 +2,7 @@
   overflow: hidden;
 	text-align: left;
 	padding: 42px 0;
+	margin: 0 auto;
   // width: calc( 
 	// 	(px2vw(65px) + px2vw(42px) + px2vw(39px) + px2vw($testimonials-card-w)) * 2
   // ); 
@@ -71,5 +72,9 @@
 
 	#testimonials-card-5::before {
 		@include pseudo-elem-img("/common.blocks/testimonials/testimonials-container/Satya-Nadella.jpg");
+	}
+
+	#testimonials-card-6::before {
+		@include pseudo-elem-img("/common.blocks/testimonials/testimonials-container/Benedetto-Vigna.jpg");
 	}
 }

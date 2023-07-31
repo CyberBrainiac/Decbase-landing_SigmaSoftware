@@ -2,9 +2,27 @@
 @import './years-on-market/years-on-market.scss';
 
 .about-us {
+	position: relative;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   row-gap: 20vh;
   padding: 80px 0;
+
+	&_decore {
+		@include background-decore("/images/background-decore.svg");
+		width: 212px;
+		height: 153px;
+    transform: translateY(-50%);
+		top: 54%;
+	}
+
+	&_decore-split {
+		@include background-decore("/images/background-decore-split.svg");
+		width: px2vw(212px);
+		height: 153px;
+    transform: translateY(-50%);
+		top: 78%;
+    left: 102.5%;
+	}
 }

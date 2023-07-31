@@ -38,7 +38,7 @@ function formHandler() {
 			email: formData.get("email"),
 		}
 
-		setObjectInSessionStorage('currentUser', userProps);
+		localStorage.setItem('currentUser', JSON.stringify(userProps));
 		if(userProps.name === "Sigma" || userProps.name === "sigma") {
 			surprize(userProps.surname);
 		}

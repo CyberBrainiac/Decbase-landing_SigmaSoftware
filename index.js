@@ -22,6 +22,8 @@ function appendScripts() {
 		"./common.blocks/testimonials/testimonials-container/calcCardWidth.js",
 		"./common.blocks/news/isElementVisible.js",
 		"./common.blocks/surprize/surprize.js",
+		"./common.blocks/user-afk/isUserAFK.js",
+		"./common.blocks/footer/getSystemYear.js",
 
 		/**HANDLERS*/
 		"./common.blocks/header/progress-bar/progress-bar.js",
@@ -61,7 +63,9 @@ function appendScripts() {
       serviceHandlers(); //get API data and check filtrs
       allFiltr(); //default filter in Service section
 			testimonialsHandler(); //set testimonial to base position
-			formHandler() //listen form events
+			formHandler(); //listen form events
+			isUserAFK(); //start monitoring user activity
+			getSystemYear(); //set system year to footer
     })
     .catch(error => {
       console.error(error);

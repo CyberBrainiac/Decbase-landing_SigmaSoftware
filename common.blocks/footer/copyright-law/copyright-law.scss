@@ -1,0 +1,17 @@
+.copyright-law {
+	text-align: center;
+
+	&__horizontal-line {
+		border: 1px solid $hr-color-main;
+		width: 100%;
+	}
+
+	&__info {
+		padding-top: 15px;
+		padding-bottom: 18px;
+	}
+
+	&_highlight {
+		color: $buttons-color-main;
+	}
+}
